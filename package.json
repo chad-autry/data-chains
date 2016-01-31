@@ -26,5 +26,8 @@
   "homepage": "https://github.com/chad-autry/data-chains",
   "devDependencies": {
     "jshint": "^2.8.0"
+  },
+  "dependencies": {
+    "wolfy87-eventemitter": "^4.3.0"
   }
 }
