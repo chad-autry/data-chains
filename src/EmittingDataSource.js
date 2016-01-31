@@ -6,7 +6,7 @@
  */
 
  var EventEmitter = require('wolfy87-eventemitter');
- module.exports.prototype = new EventEmitter();
+
  
 /**
  * A simple DataSource which takes a given list of items and emitts an event
@@ -40,6 +40,7 @@ module.exports = function EmittingDataSource() {
      */
     this.updateItems = function(items) {
         this.emitEvent('dataChanged', {added:[], removed:[], updated:items});
-    };
-    
+    };    
 };
+
+module.exports.prototype = new EventEmitter();
