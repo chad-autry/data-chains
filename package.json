@@ -1,6 +1,6 @@
 {
   "name": "data-chains",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Evented collection change event API",
   "main": "index.js",
   "scripts": {
