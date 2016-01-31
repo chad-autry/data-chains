@@ -1,0 +1,30 @@
+{
+  "name": "data-chains",
+  "version": "0.1.0",
+  "description": "Evented collection change event API",
+  "main": "index.js",
+  "scripts": {
+    "jshint": "jshint ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chad-autry/data-chains.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "sandbox"
+  ],
+  "author": {
+    "name": "Chad Autry",
+    "email": "chad.autry@gmail.com",
+    "url": "http://chad-autry.github.io/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chad-autry/data-chains/issues"
+  },
+  "homepage": "https://github.com/chad-autry/data-chains",
+  "devDependencies": {
+    "jshint": "^2.8.0"
+  }
+}
