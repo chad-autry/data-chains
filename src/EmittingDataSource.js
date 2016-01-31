@@ -23,7 +23,7 @@ module.exports = function EmittingDataSource() {
      * @param {Object[]} items - The array of items to add
      */
     this.addItems = function(items) {
-        this.emitEvent('dataChanged', {added:items, removed:[], updated:[]});
+        this.emitEvent('dataChanged', [{added:items, removed:[], updated:[]}]);
     };
 
     /**
@@ -31,7 +31,7 @@ module.exports = function EmittingDataSource() {
      * @param {Object[]} items - The array of items to remove
      */
     this.removeItems = function(items) {
-        this.emitEvent('dataChanged', {added:[], removed:items, updated:[]});
+        this.emitEvent('dataChanged', [{added:[], removed:items, updated:[]}]);
     };
     
     /**
@@ -39,7 +39,7 @@ module.exports = function EmittingDataSource() {
      * @param {Object[]} items - The array of items to add
      */
     this.updateItems = function(items) {
-        this.emitEvent('dataChanged', {added:[], removed:[], updated:items});
+        this.emitEvent('dataChanged', [{added:[], removed:[], updated:items}]);
     };    
 };
 
