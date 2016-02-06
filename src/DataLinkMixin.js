@@ -13,7 +13,10 @@ var eventEmitter = new EventEmitter();
  * * @param { DataSource } dataSource - The DataSource to listen to
  */
 var setDataSource = function (dataSource) {
-    dataSource.addListener('dataChanged', function(event) {this.onDataChanged(event);});
+    var listener = this;
+    dataSource.addListener('dataChanged', function(event) {
+        listener.onDataChanged(event);
+    });
 };
 
 /**
