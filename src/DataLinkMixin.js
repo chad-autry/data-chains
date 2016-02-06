@@ -25,7 +25,7 @@ module.exports = function () {
 
     //Copy over everything in EventEmitter to the object
     for (var k in eventEmitter) {
-        if (eventEmitter.hasOwnProperty(k)) {
+        if (!this.hasOwnProperty(k)) {
             this[k] = eventEmitter[k];
         }
     }
